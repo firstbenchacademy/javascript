@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Control Flow - Javascript</title>
+	<script src="https://kit.fontawesome.com/22e6195b42.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="controlflow.js"></script>
+	<style type="text/css">
+		.button{
+			border-radius: 10px;
+			background-color: #83B653;
+			border-color: white;
+			border-style: solid;
+			border-width: 1px;
+			height: 30px;
+		}
+		.text{
+			border-radius: 10px;
+			height: 30px;
+			border-color: gray;
+			border-style: solid;
+			border-width: 1px;
+		}
+	</style>
+</head>
+<body>
+	<label for="runall">Click this button to run all</label>
+	<input type="button" class="button" name="runall" value="Run All" onclick="runAll()">
+	<br><br>
+	<label for="switch">Enter some number and Click this button to run switch case</label>
+	<input type="text" class="text" id="switch" name="switch" value="1" placeholder="1" >
+	<input type="button" class="button" name="switchbutton" value="Run Switch" onclick="switchCase(document.getElementById('switch').value);">
+	<br><br>
+	<label for="switch"> CHeck in switchcase :: </label>	
+	<input type="text" value="1" id="ternary" name="ternary">
+	<input type="button" value="TERNARY" onclick="ternaryOper(document.getElementById('ternary').value)">
+</body>
+</html>
